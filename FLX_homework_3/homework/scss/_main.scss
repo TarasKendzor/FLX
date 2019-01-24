@@ -1,0 +1,182 @@
+ @mixin mainFont{
+    font:$pageFont;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+@mixin headerButton{
+    display: flex;
+    padding: 15px 60px;
+    text-decoration: none;
+    background-color: #01ACAC;
+    color: white;
+    font-size: 24px;
+}
+@mixin h1HeaderStyle{
+    font:$pageFont;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+}
+@mixin postH3{
+    border-top:1px solid #607D8B;
+    color:#0097A7;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 5px;
+    font:$pageFont;
+    line-height: 1.5;
+}
+@mixin pFons{
+     font:$pageFont;
+     font-size: 15px;
+     line-height: 1.8;
+}
+
+ body{
+         background-color: $mainWrapperBackColor;
+         margin: 0;
+         position: relative;
+    .top-wrapper {
+        background-image: $mainBackgroundImage;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: space-between;
+        .logo {
+            width: 18%;
+            img {
+                width: 100%;
+                 }
+             }
+        nav {
+            display: flex;
+            a {
+                @include mainFont;
+                color: $color;
+                padding: 10px 100px;
+            }
+        }
+    }
+    header {
+        .btn-top {
+            @include headerButton;
+            left: 41%;
+            position: absolute;
+            top: 8.9%;
+        }
+        h1 {
+            @include h1HeaderStyle;
+            color: $color;
+            left: 25%;
+            position: absolute;
+            top: 7%;
+        }
+    }
+    main {
+        .toolbar {
+            margin: 2% 0 0 72%;
+            input {
+                background-color: $inputBackColor;
+                border: $inputBorder;
+                padding: 5px;
+            }
+        }
+        .post-list {
+            margin: 0 auto;
+            text-align: center;
+            width: 70%;
+            h1 {
+                display: flex;
+                flex-direction: row-reverse;
+                font-size: 24px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            article {
+                background-color: $postBackground;
+                display: flex;
+                margin: 12px 0;
+                padding: 10px;
+                .btn {
+                    background-color: $btnBackground;
+                    border: none;
+                    color: white;
+                    margin-left: 75%;
+                    padding: 7px 50px;
+                }
+                .post {
+                    padding-left: 5px;
+                    text-align: left;
+                    p {
+                        @include pFons;
+                        margin-top: 5px;
+                    }
+                    h3 {
+                        @include postH3;
+                        margin: 5px 0;
+                    }
+                    .post-description {
+                        color: $postcolor;
+                    }
+                }
+                img {
+                    height: 25%;
+                    width: 25%;
+                }
+            }
+        }
+    }
+    .about {
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
+        h1 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        p {
+            @include pFons;
+            text-align: left;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .contact-form {
+        margin: 0 auto;
+        text-align: right;
+        width: 70%;
+        .text-area textarea {
+            background-color: $inputBackColor;
+            border: $inputBorder;
+        }
+        p {
+            @include pFons;
+            color: $formPColor;
+            margin-bottom: 2px;
+        }
+        button {
+            background-color: $btnBackground;
+            border: none;
+            color: white;
+            margin-left: 75%;
+            margin-top: 15px;
+            padding: 10px 70px;
+        }
+        .inputs {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto;
+            input {
+                background-color: $inputBackColor;
+                border: $inputBorder;
+                margin: 0 5px 5px 0px;
+                padding: 14px 145px;
+            }
+        }
+    }
+}

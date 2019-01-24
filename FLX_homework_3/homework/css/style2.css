@@ -1,0 +1,137 @@
+body {
+  background-color: #EFEFEF;
+  margin: 0;
+  position: relative; }
+  body .top-wrapper {
+    background-image: url(../img/header_background_v2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between; }
+    body .top-wrapper .logo {
+      width: 18%; }
+      body .top-wrapper .logo img {
+        width: 100%; }
+    body .top-wrapper nav {
+      display: flex; }
+      body .top-wrapper nav a {
+        font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #FF5722;
+        padding: 10px 100px; }
+  body header .btn-top {
+    display: flex;
+    padding: 15px 60px;
+    text-decoration: none;
+    background-color: #01ACAC;
+    color: white;
+    font-size: 24px;
+    left: 41%;
+    position: absolute;
+    top: 8.9%; }
+  body header h1 {
+    font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FF5722;
+    left: 25%;
+    position: absolute;
+    top: 7%; }
+  body main .toolbar {
+    margin: 2% 0 0 72%; }
+    body main .toolbar input {
+      background-color: #EFEFEF;
+      border: 1px solid #D3DBDE;
+      padding: 5px; }
+  body main .post-list {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%; }
+    body main .post-list h1 {
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: 24px;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+    body main .post-list article {
+      background-color: #FFFFFF;
+      display: flex;
+      margin: 12px 0;
+      padding: 10px; }
+      body main .post-list article .btn {
+        background-color: #0401AC;
+        border: none;
+        color: white;
+        margin-left: 75%;
+        padding: 7px 50px; }
+      body main .post-list article .post {
+        padding-left: 5px;
+        text-align: left; }
+        body main .post-list article .post p {
+          font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          font-size: 15px;
+          line-height: 1.8;
+          margin-top: 5px; }
+        body main .post-list article .post h3 {
+          border-top: 1px solid #607D8B;
+          color: #0097A7;
+          font-size: 24px;
+          font-weight: bold;
+          padding-top: 5px;
+          font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          line-height: 1.5;
+          margin: 5px 0; }
+        body main .post-list article .post .post-description {
+          color: #C4CFE2; }
+      body main .post-list article img {
+        height: 25%;
+        width: 25%; }
+  body .about {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%; }
+    body .about h1 {
+      display: flex;
+      flex-direction: row-reverse; }
+    body .about p {
+      font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 15px;
+      line-height: 1.8;
+      text-align: left; }
+    body .about img {
+      width: 100%; }
+  body .contact-form {
+    margin: 0 auto;
+    text-align: right;
+    width: 70%; }
+    body .contact-form .text-area textarea {
+      background-color: #EFEFEF;
+      border: 1px solid #D3DBDE; }
+    body .contact-form p {
+      font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #7A8592;
+      margin-bottom: 2px; }
+    body .contact-form button {
+      background-color: #0401AC;
+      border: none;
+      color: white;
+      margin-left: 75%;
+      margin-top: 15px;
+      padding: 10px 70px; }
+    body .contact-form .inputs {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 auto; }
+      body .contact-form .inputs input {
+        background-color: #EFEFEF;
+        border: 1px solid #D3DBDE;
+        margin: 0 5px 5px 0px;
+        padding: 14px 145px; }
